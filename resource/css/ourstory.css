@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 17px;
+    position: relative;
+    color: black;
+  }
+  
+
+
+  .toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #d2b48c;
+}
+
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #d2b48c;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 340px;
+    display: block;
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+  
+
+.divider {
+    color:#d2b48c;
+    border: none;
+    border-top: 2px solid #d2b48c; /* Adjust the color and thickness as needed */
+    margin: 20px 0; /* Add margin to control the distance between the line and content */
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #d2b48c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: black;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+img{
+    max-width: 600px;
+    float: left;
+    border: 3px solid white;
+    margin-right: 100px;
+}
+
+
+
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('resource/images/022A9055.png');
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set the height of the section */
+}
+
+
+
+
+.story {
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+.para-container {
+    max-width: 800px; /* Set the maximum width of the paragraphs */
+    margin: 0 auto; /* Center the paragraphs horizontally */
+}
+
+.para {
+    text-align: justify;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 20px; 
+    font-size: 19px;
+}
+
+.story-h2{
+    padding-bottom: 14px;
+    padding-right: 630px;
+    font-size: 50px;
+}
+
+.story-h3{
+    padding-bottom: 14px;
+    padding-left: 630px;
+    font-size: 50px;
+}
+
+.word-font{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.text-box{
+    color: white; 
+    padding-top: 160px; 
+    font-family: 'Dancing Script', cursive; 
+    text-align: right;
+    padding-left: 70px;
+
+}
+
+
+.text-box h2{
+    font-size: 42px;
+    font-family: 'Dancing Script', cursive;
+
+    
+}
+
+.text-box p{
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.footer-content{
+    padding-top: 50px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+    color: #d2b48c;
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .story-h2,
+    .story-h3 {
+      font-size: 36px; /* Adjust the font size for smaller screens */
+      padding-right: 20px; /* Adjust the padding for smaller screens */
+      padding-left: 20px; /* Adjust the padding for smaller screens */
+    }
+  
+    .text-box {
+      padding-top: 50px; /* Adjust the padding for smaller screens */
+    }
+  
+    .text-box h2 {
+      font-size: 30px; /* Adjust the font size for smaller screens */
+    }
+  
+    .para {
+      font-size: 16px; /* Adjust the font size for smaller screens */
+      margin-bottom: 10px; /* Adjust the margin for smaller screens */
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    .story-h2,
+    .story-h3 {
+      font-size: 28px; /* Font size remains the same for smaller screens */
+      width: 80%; /* Adjust the width for quicker wrapping */
+      margin: 0 auto; /* Center the text on smaller screens */
+    }
+  
+    .text-box {
+      padding-top: 30px; /* Adjust the padding for even smaller screens */
+    }
+  
+    .text-box h2 {
+      font-size: 24px; /* Adjust the font size for even smaller screens */
+    }
+  
+    .para {
+      font-size: 14px; /* Adjust the font size for even smaller screens */
+      margin-bottom: 8px; /* Adjust the margin for even smaller screens */
+      width: 80%; /* Adjust the width for quicker wrapping */
+      margin: 0 auto; /* Center the text on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .story-h2,
+    .story-h3 {
+      font-size: 24px;
+      width: 80%; /* Adjust the width for quicker wrapping */
+      margin: 0 auto; /* Center the text on smaller screens */
+    }
+  
+    .text-box {
+      padding-top: 20px;
+    }
+  
+    .text-box h2 {
+      font-size: 20px;
+    }
+  
+    .para {
+      font-size: 12px;
+      margin-bottom: 6px;
+      width: 80%; /* Adjust the width for quicker wrapping */
+      margin: 0 auto; /* Center the text on smaller screens */
+    }
+  }
+
+ 
+
+@media screen and (max-width: 1510px) {
+
+    .top-bar {
+        font-size: 27px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    nav ul {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    #cont {
+        background-size: auto 80% !important; /* Adjust the background size for smaller screens */
+       
+    }
+
+
+}

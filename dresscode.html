@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim&Kemi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="resource/css/dresscode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="top-bar">K e m i & T i m o t h y </div>
+            <ul>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/index.html">HOME</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/details.html">DETAILS</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/accomodation.html">ACCOMODATIONS</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/dresscode.html">DRESS CODE</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/ourstory.html">OUR STORY</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/weddingparty.html">WEDDING PARTY</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/gallery.html">GALLERY</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown-menu">
+                
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/index.html">HOME</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/details.html">DETAILS</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/accomodation.html">ACCOMODATIONS</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/dresscode.html">DRESS CODE</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/ourstory.html">OUR STORY</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/weddingparty.html">WEDDING PARTY</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/gallery.html">GALLERY</a></li>
+                
+            </div>
+      </nav>
+
+
+    <hr class="divider">
+
+    <H1>WEDDING DRESS CODE</H1>
+
+    <div class="additional-content">
+        <h3>Hollywood Glam</h3>
+        <p>We kingly ask our guest to dress in the chosen color palette for our special day.</p>
+        <p><b>Women:</b> Formal evening dress, a dressy cocktail dress or a chic pant suit.</p>
+        <p><b>Men:</b> Black or dark colored tux or suit.</p>
+
+       <div class="circle-container">
+        <div class="circle"></div>
+        <div class="black"></div>
+        <div class="circle"></div>
+        <div class="sauve"></div>
+    </div>
+</div>
+    </div>
+
+
+    <div class="container">
+        <div class="column">
+            <h2>LADIES</h2>
+            <div class="ladies-img">
+              <img src="resource/images/IMG_8044-fotor-bg-remover-20231206213058.png" alt="Ladies Dress">
+            </div>
+        </div>
+    
+        <div class="column">
+            <h2 class="men-media"  >GENTLEMEN</h2>
+            <div class="men-img">
+              <img src="resource/images/newimg6-fotor-bg-remover-20231201181731.png" alt="Men Dress">
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2023 OluwaKemi & Timothy; Designed by <span class="designer">Mikebeenmadeit</span></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const toggleIcon = document.querySelector('.toggle i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+// Toggle the visibility of each dropdown item when the toggle icon is clicked
+        toggle.onclick = function () {
+         dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open');
+
+        toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+
+    // Toggle visibility of each dropdown item
+    dropdownItems.forEach(item => {
+        item.style.display = isOpen ? 'flex' : 'none';
+    });
+}; 
+// Close the dropdown menu and remove the 'open' class on any click outside the menu
+document.body.addEventListener('click', function (event) {
+            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
+                dropdownMenu.classList.remove('open');
+                toggleIcon.classList = 'fa-solid fa-bars';
+                dropdownItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+            }
+        });
+
+
+
+      </script>
+    
+</body>
+</html>

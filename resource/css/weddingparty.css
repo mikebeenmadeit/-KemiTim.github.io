@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 17px;
+    position: relative;
+    color: black;
+  }
+
+
+  .toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #d2b48c;
+}
+
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #d2b48c;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 340px;
+    display: block;
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+  
+  
+
+.divider {
+    color:#d2b48c;
+    border: none;
+    border-top: 2px solid #d2b48c; /* Adjust the color and thickness as needed */
+    margin: 20px 0; /* Add margin to control the distance between the line and content */
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #d2b48c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: black;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+.bridesmaids-section {
+    margin-top: 78px;
+    text-align: center;
+    color: #d2b48c;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #d2b48c;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .bridesmaids-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+
+  .bridesmaid p.honor {
+    color:#d2b48c ;
+  }
+
+  .grooms p.honor {
+    color:#d2b48c ;
+  }
+  .bridesmaid {
+    margin-bottom: 15px;
+    text-align: center;
+    flex-basis: calc(20% - 10px);
+    
+  }
+
+  .bridesmaid img {
+    width: 180px; /* Adjust the size as needed */
+    height: 180px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .bridesmaid p {
+    margin: 5px 0;
+    font-weight: bold;
+    margin-top: 16px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+  }
+
+  .spacer {
+    width: 100%;
+    margin-bottom: 30px; /* Adjust the spacing between rows of bridesmaids */
+  }
+
+  .groom-section .groom-heading {
+    font-size: 35px;
+}
+
+.bridesmaids-section .groom-heading {
+    font-size: 35px;
+}
+
+
+  .groom-section {
+    margin-top: 78px;
+    text-align: center;
+    color: #d2b48c;
+  }
+
+  .groom-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+
+  .grooms {
+    margin-bottom: 15px;
+    text-align: center;
+    flex-basis: calc(20% - 10px);
+    
+  }
+
+  .grooms img {
+    width: 180px; /* Adjust the size as needed */
+    height: 180px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .grooms p {
+    margin: 5px 0;
+    font-weight: bold;
+    margin-top: 16px;
+    color: black;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    
+  }
+
+  .footer-content{
+    padding-top: 30px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #d2b48c;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+.special {
+    object-fit: cover;
+   
+}
+
+@media screen and (max-width: 1230px) {
+    .bridesmaid,
+  .grooms {
+    flex-basis: calc(33.33% - 10px); /* Display 3 in a row */
+  }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .bridesmaid,
+    .grooms {
+      flex-basis: calc(55% - 10px); /* Display 2 in a row for smaller screens */
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .bridesmaid,
+    .grooms {
+      flex-basis: calc(60% - 10px); /* Display 2 in a row */
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    /* Adjust image size for smaller screens */
+    .top-bar {
+        font-size: 22px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+      
+  }
+
+  @media screen and (min-width: 851px) and (max-width: 1450px) {
+    /* Adjust image size and position for screens between 850px and 1000px */
+    .top-bar {
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+    
+  }
+
+
+  @media screen and (max-width: 1510px) {
+
+    .top-bar {
+        font-size: 27px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    nav ul {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+   
+
+
+}

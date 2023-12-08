@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/accomodation.css">
+    <title>Tim&Kemi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="top-bar">K e m i & T i m o t h y </div>
+            <ul>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/index.html">HOME</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/details.html">DETAILS</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/accomodation.html">ACCOMODATIONS</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/dresscode.html">DRESS CODE</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/ourstory.html">OUR STORY</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/weddingparty.html">WEDDING PARTY</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/gallery.html">GALLERY</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown-menu">
+                
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/index.html">HOME</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/details.html">DETAILS</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/accomodation.html">ACCOMODATIONS</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/dresscode.html">DRESS CODE</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/ourstory.html">OUR STORY</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/weddingparty.html">WEDDING PARTY</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/gallery.html">GALLERY</a></li>
+                
+            </div>
+      </nav>
+
+    <hr class="divider">
+
+    <div class="hotel-container">
+        <div class="hotels">
+            <img src="resource/images/himg9.jpeg" alt="">
+            <h2 class="hotel-text">La Quinta Inn by Wyndham St. Louis Hazelwood</h2>
+            <p class="hotel-p">318 Taylor Rd, Hazelwood, MO 63042</p>
+            
+            <a href="https://www.wyndhamhotels.com/laquinta/hazelwood-missouri/la-quinta-inn-st-louis-hazelwood-airport-north/overview?CID=LC:6ysy27krtpcrqev:52933" target="_blank">
+            <button>BOOK A ROOM</button>
+            </a>
+        </div>
+
+        <div class="hotels">
+            <img src="resource/images/himg2.webp" alt="">
+            <h2 class="hotel-text" >Comfort Inn & Suites St. Louis Hazelwood</h2>
+            <p class="hotel-p">7133 Douglas Palmer Pl, Hazelwood, MO 63042</p>
+            
+            <a href="https://www.choicehotels.com/missouri/hazelwood/comfort-inn-hotels/mo195?mc=llgoxxpx" target="_blank">
+                <button class="hotel-bt">BOOK A ROOM</button>
+            </a>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2023 OluwaKemi & Timothy; Designed by <span class="designer">Michael Akande</span></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const toggleIcon = document.querySelector('.toggle i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+// Toggle the visibility of each dropdown item when the toggle icon is clicked
+        toggle.onclick = function () {
+         dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open');
+
+        toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+
+    // Toggle visibility of each dropdown item
+    dropdownItems.forEach(item => {
+        item.style.display = isOpen ? 'flex' : 'none';
+    });
+}; 
+// Close the dropdown menu and remove the 'open' class on any click outside the menu
+document.body.addEventListener('click', function (event) {
+            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
+                dropdownMenu.classList.remove('open');
+                toggleIcon.classList = 'fa-solid fa-bars';
+                dropdownItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+            }
+        });
+
+
+
+      </script>
+  
+        
+
+
+    
+</body>
+</html>

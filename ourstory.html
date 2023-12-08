@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR STORY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/css/ourstory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="top-bar">K e m i & T i m o t h y </div>
+            <ul>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/index.html">HOME</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/details.html">DETAILS</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/accomodation.html">ACCOMODATIONS</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/dresscode.html">DRESS CODE</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/ourstory.html">OUR STORY</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/weddingparty.html">WEDDING PARTY</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/gallery.html">GALLERY</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown-menu">
+                
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/index.html">HOME</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/details.html">DETAILS</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/accomodation.html">ACCOMODATIONS</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/dresscode.html">DRESS CODE</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/ourstory.html">OUR STORY</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/weddingparty.html">WEDDING PARTY</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/gallery.html">GALLERY</a></li>
+                
+            </div>
+      </nav>
+
+    <section id="cont" style="background-image: url('resource/images/022A9055.png'); background-size: cover; background-position: center 20%; background-repeat: no-repeat; height: 100vh;">
+    
+</section>
+
+<section>
+    <div class="story">
+        <h2 class="story-h2">Her POV</h2>
+        <div class="para-container">
+            <p class="para">Once upon a time, in the bustling city where dreams intertwined with reality, I found myself captivated by a love story that began with a chance encounter. Her name was Emily, and she had an aura that could light up the darkest corners of my world. We met on a crisp autumn day. I remember the way her laughter danced through the air, reaching my ears like a melody that instantly became my favorite tune. As our eyes locked, I felt an inexplicable connection, as if the universe conspired to bring us together. Our initial conversations were like a carefully choreographed dance, each word leading to the next with a rhythm that echoed the beating of our hearts. Emily was an artist, and her passion.</p>
+            <p class="para">Days turned into nights filled with shared dreams and whispered confessions. We explored the city hand in hand, creating memories that lingered like the sweet scent of blooming flowers. From quiet cafés to bustling parks, every place held a fragment of our story. As our love deepened, so did our understanding of each other. Emily became my confidante, and in her presence, I discovered a sense of peace that only true love can provide. We weathered storms and reveled in sunshine, finding solace in the simple joy of being together.</p>
+        </div>
+    </div>
+
+    <div class="story">
+        <h2 class="story-h3">His POV</h2>
+        <div class="para-container">
+            <p class="para">Once upon a time, in the bustling city where dreams intertwined with reality, I found myself captivated by a love story that began with a chance encounter. Her name was Emily, and she had an aura that could light up the darkest corners of my world. We met on a crisp autumn day. I remember the way her laughter danced through the air, reaching my ears like a melody that instantly became my favorite tune. As our eyes locked, I felt an inexplicable connection, as if the universe conspired to bring us together. Our initial conversations were like a carefully choreographed dance, each word leading to the next with a rhythm that echoed the beating of our hearts. Emily was an artist, and her passion.</p>
+            <p class="para">Days turned into nights filled with shared dreams and whispered confessions. We explored the city hand in hand, creating memories that lingered like the sweet scent of blooming flowers. From quiet cafés to bustling parks, every place held a fragment of our story. As our love deepened, so did our understanding of each other. Emily became my confidante, and in her presence, I discovered a sense of peace that only true love can provide. We weathered storms and reveled in sunshine, finding solace in the simple joy of being together.</p>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-content">
+        <p>Copyright &copy; 2023 OluwaKemi & Timothy; Designed by <span class="designer">Mikebeenmadeit</span></p>
+    </div>
+</footer>
+
+
+<script>
+    const toggle = document.querySelector('.toggle');
+    const toggleIcon = document.querySelector('.toggle i');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+// Toggle the visibility of each dropdown item when the toggle icon is clicked
+    toggle.onclick = function () {
+     dropdownMenu.classList.toggle('open');
+    const isOpen = dropdownMenu.classList.contains('open');
+
+    toggleIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars';
+
+// Toggle visibility of each dropdown item
+dropdownItems.forEach(item => {
+    item.style.display = isOpen ? 'flex' : 'none';
+});
+}; 
+// Close the dropdown menu and remove the 'open' class on any click outside the menu
+document.body.addEventListener('click', function (event) {
+        if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
+            dropdownMenu.classList.remove('open');
+            toggleIcon.classList = 'fa-solid fa-bars';
+            dropdownItems.forEach(item => {
+                item.style.display = 'none';
+            });
+        }
+    });
+
+
+
+  </script>
+
+
+    
+</body>
+</html>

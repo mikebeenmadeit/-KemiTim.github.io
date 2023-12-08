@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="resource/css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="top-bar">K e m i & T i m o t h y </div>
+            <ul>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/index.html">HOME</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/details.html">DETAILS</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/accomodation.html">ACCOMODATIONS</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/dresscode.html">DRESS CODE</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/ourstory.html">OUR STORY</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/weddingparty.html">WEDDING PARTY</a></li>
+                <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/gallery.html">GALLERY</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown-menu">
+                
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/index.html">HOME</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/details.html">DETAILS</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/accomodation.html">ACCOMODATIONS</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/dresscode.html">DRESS CODE</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/ourstory.html">OUR STORY</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/weddingparty.html">WEDDING PARTY</a></li>
+                    <li><a href="/Users/mike/Desktop/Full Stack projects/KemiWedding/gallery.html">GALLERY</a></li>
+                
+            </div>
+      </nav>
+
+
+    <hr class="divider">
+
+
+    <div class="container">
+        <div class="heading">
+            <h1>Photo Gallery</h1>
+        </div>
+
+        <div class="box">
+        
+            <div class="dream">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A9055.png" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/Copy of J0Y_8959.jpeg" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/IMG_1857.png" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/IMG_2596.JPG" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A8925.PNG" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A8843.png" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/Copy of J0Y_9194.jpeg" alt="">
+            </div>
+
+            <div class="dream">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A9136.png" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A8930.PNG" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/IMG_3634.png" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/Copy of J0Y_9220.jpeg" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/Copy of J0Y_9194.jpeg" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/IMG_3942.png" alt="">
+            </div>
+
+            <div class="dream">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A9010.PNG" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/IMG_3574.png" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/Copy of J0Y_9194.jpeg" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A9010.PNG" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/Copy of J0Y_8959.jpeg" alt="">
+                <img src="/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A9040.jpeg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const toggleIcon = document.querySelector('.toggle i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+// Toggle the visibility of each dropdown item when the toggle icon is clicked
+        toggle.onclick = function () {
+         dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open');
+
+        toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+
+    // Toggle visibility of each dropdown item
+    dropdownItems.forEach(item => {
+        item.style.display = isOpen ? 'flex' : 'none';
+    });
+}; 
+// Close the dropdown menu and remove the 'open' class on any click outside the menu
+document.body.addEventListener('click', function (event) {
+            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
+                dropdownMenu.classList.remove('open');
+                toggleIcon.classList = 'fa-solid fa-bars';
+                dropdownItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+            }
+        });
+
+
+
+      </script>
+
+    
+</body>
+</html>

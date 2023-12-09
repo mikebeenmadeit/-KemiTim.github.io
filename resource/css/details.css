@@ -282,5 +282,9 @@ a:hover::after{
         width: unset;
     }
 
+     .text-container {
+        height: 350px;
+    }
+
 
 }

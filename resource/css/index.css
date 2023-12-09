@@ -341,9 +341,9 @@ a:hover::after{
 
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .dropdown-menu.open {
-    height: 320px;
+    height: 313px;
   }
 }
 

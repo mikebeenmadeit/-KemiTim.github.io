@@ -228,7 +228,7 @@ a:hover::after{
 h1 {
     text-align: center;
     padding-top: 38px;
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', cursive;
 }
 
 .footer-content{

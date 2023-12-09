@@ -341,10 +341,10 @@ a:hover::after{
 
 }
 
-@media screen and (max-width: 414px) {
-  .dropdown-menu.open {
-    height: 313px;
-  }
+@media screen and (max-width: 410px) {
+  .dropdown-menu li {
+       font-size: 19px;
+}
 }
 
   

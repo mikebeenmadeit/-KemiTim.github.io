@@ -316,6 +316,7 @@ img{
 
     #cont {
         background-size: auto 80% !important; /* Adjust the background size for smaller screens */
+        margin-bottom: -75px;
        
     }
 

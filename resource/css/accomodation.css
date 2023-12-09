@@ -283,3 +283,9 @@ button {
 
 
 }
+
+@media screen and (max-width: 480px) {
+  .dropdown-menu li {
+       font-size: 19px;
+}
+}

@@ -359,5 +359,9 @@ h1 {
         margin-top: -30px;
     }
 
+     .additional-content p {
+        font-size: 17px;
+    }
+
 
 }

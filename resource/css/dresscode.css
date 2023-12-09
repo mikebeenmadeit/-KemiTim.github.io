@@ -330,5 +330,21 @@ h1 {
         max-width: 400px;
     }
 
+     .circle {
+        width: 95px;  /* Adjust the width as needed */
+        height: 93px; /* Adjust the height as needed */
+        
+    }
+    .black {
+        width: 95px;  /* Adjust the width as needed */
+        height: 93px; /* Adjust the height as needed */
+        
+    }
+    .sauve {
+        width: 95px;  /* Adjust the width as needed */
+        height: 93px; /* Adjust the height as needed */
+        
+    }
+
 
 }

@@ -326,5 +326,9 @@ h1 {
        
     }
 
+     .additional-content p {
+        max-width: 400px;
+    }
+
 
 }

@@ -73,6 +73,7 @@ nav{
 }
 
 .dropdown-menu {
+    z-index: 2;
     display: none;
     position: absolute;
     right: 2rem;

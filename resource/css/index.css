@@ -112,7 +112,7 @@ a:hover::after{
 }
 
 .dropdown-menu.open {
-    height: 340px;
+    height: 380px;
     display: block;
 }
 

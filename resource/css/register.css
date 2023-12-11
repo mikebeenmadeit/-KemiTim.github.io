@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('images/022A8997.PNG');
+    background-image: url('resource/images/022A8997.PNG');
     background-size: 60% auto; /* Adjust the background-size to make the image smaller (30% width, auto height) */
     background-position: right top; /* Adjust the background-position to move the image to the right */
     font-family: 'Arial', sans-serif;

@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A8997.PNG');
+    background-size: 60% auto; /* Adjust the background-size to make the image smaller (30% width, auto height) */
+    background-position: right top; /* Adjust the background-position to move the image to the right */
+    font-family: 'Arial', sans-serif;
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 17px;
+    position: relative;
+    color: black;
+  }
+  
+.toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #d2b48c;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #d2b48c;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 340px;
+    display: block;
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.registry-section {
+    position: relative;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.overlay h1 {
+    font-size: 49px;
+}
+
+
+.overlay h1,
+.overlay p {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+}
+
+.overlay p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Adjust the margin-top for h1 and p to move them up */
+.move-up {
+    margin-top: -270px;
+}
+
+.move-up2 {
+    margin-top: 10px;
+    max-width: 80%;
+}
+
+/* Add this to your existing CSS */
+.center-button {
+    margin-top: 20px; /* Adjust the margin as needed */
+    text-align: center;
+}
+
+/* Additional styling for the button, adjust as needed */
+.center-button {
+    padding: 10px 20px;
+    background-color: #d2b48c;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+
+}
+
+.dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #d2b48c;
+}
+
+  
+  .dropdown-menu {
+    z-index: 2; /* Set a higher z-index */
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #d2b48c;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 340px;
+    display: block;
+}
+
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+  
+
+@media screen and (max-width: 1510px) {
+
+    .top-bar {
+        font-size: 27px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    nav ul {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .registry-section {
+      width: 100%; /* Make the overlay cover the entire width */
+    }
+  
+    .overlay {
+      width: 100%; /* Make the overlay cover the entire width */
+      padding-left: 20px; /* Adjust padding as needed */
+      text-align: center;
+    }
+  
+    .move-up {
+        margin-top: 0; /* Remove the negative margin-top for h1 */
+        display: block; /* Ensure display is block for centering */
+        margin-left: auto; /* Center the heading horizontally */
+        margin-right: auto; /* Center the heading horizontally */
+      }
+
+    .center-button {
+        margin-top: 20px; /* Adjust the margin-top as needed for the button */
+        text-align: center; /* Center the button */
+      }
+      .center-button {
+        margin-top: 20px; /* Adjust the margin-top as needed for the button */
+        text-align: center; /* Center the button */
+        display: block; /* Ensures margin-top works */
+        margin-left: auto; /* Center the button horizontally */
+        margin-right: auto; /* Center the button horizontally */
+      }
+
+      p {
+        text-align: center;
+        margin-top: 10px; /* Adjust the margin-top as needed for the paragraphs */
+        max-width: 100%; /* Ensure paragraphs don't exceed the width of the overlay */
+        margin-left: auto; /* Center the paragraphs horizontally */
+        margin-right: auto; /* Center the paragraphs horizontally */
+        max-width: 80%;
+      }
+  }

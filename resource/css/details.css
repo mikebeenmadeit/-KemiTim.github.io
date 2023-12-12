@@ -295,3 +295,12 @@ a:hover::after{
        font-size: 19px;
 }
 }
+
+
+@media (max-width: 400px) {
+    .text-container {
+      width: 75%; /* Adjust the width as needed */
+      
+    }
+  
+  }

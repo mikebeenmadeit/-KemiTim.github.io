@@ -347,6 +347,11 @@ a:hover::after{
   .dropdown-menu li {
        font-size: 19px;
 }
+
+.text-container {
+  height: 500px;
+}
+    
 }
 
 @media (max-width: 438px) {

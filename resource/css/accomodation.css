@@ -156,14 +156,14 @@ body{
 .hotel-text{
     padding-top: 50px;
     font-family: 'Fira Sans', sans-serif;
-    color: #fff;
+    color: black;
 }
 
 .hotel-p{
     padding-top: 45px;
     padding-bottom: 45px;
     font-family: 'Fira Sans', sans-serif;
-    color: #fff;
+    color: black;
 }
 
 button {

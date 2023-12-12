@@ -202,6 +202,7 @@ a:hover::after{
     padding-top: 25px;
     padding-left: 18px; 
     font-family: 'Dancing Script', cursive;
+    color: black;
   }
   
   .text-container p {
@@ -209,6 +210,7 @@ a:hover::after{
     font-size: 16px;
     padding-left: 18px; 
     font-family: 'Fira Sans', sans-serif;
+    color: black;
   }
 
   .text-container h5 {
@@ -224,7 +226,7 @@ a:hover::after{
     background-color: white;
     text-align: center;
     padding-bottom: 10px;
-    color: #d2b48c;
+    color: black;
     font-family: 'Fira Sans', sans-serif;
     
 }

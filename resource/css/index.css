@@ -226,7 +226,7 @@ a:hover::after{
     background-color: white;
     text-align: center;
     padding-bottom: 10px;
-    color: black;
+    color: #d2b48c;
     font-family: 'Fira Sans', sans-serif;
     
 }

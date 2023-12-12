@@ -299,8 +299,26 @@ a:hover::after{
 
 @media (max-width: 400px) {
     .text-container {
-      width: 75%; /* Adjust the width as needed */
+      width: 75%; /* Adjust the width as needed */    
+    }
+  
+  }
+
+
+ @media (max-width: 443px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+  
+    .text-container {
+      width: 90%; /* Adjust the width as needed */
       
+    }
+
+    .h5 {
+        max-width: 60%;
+        word-wrap: break-word;
     }
   
   }

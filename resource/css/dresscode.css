@@ -164,7 +164,7 @@ a:hover::after{
     max-width: 730px; /* Adjust the max-width as needed */
     margin: 0 auto; /* Center the paragraph */
     padding-bottom: 25px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Fira Sans', sans-serif;
     line-height: 1.5;
 }
 .additional-content p b {

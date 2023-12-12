@@ -140,6 +140,7 @@ nav{
 .overlay p {
     font-size: 1.2em;
     color: #555;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 /* Adjust the margin-top for h1 and p to move them up */

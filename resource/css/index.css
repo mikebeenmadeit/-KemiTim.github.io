@@ -353,6 +353,11 @@ a:hover::after{
 .text-container {
   height: 487px;
 }
+
+.dropdown-menu.open {
+  height: 470px;
+  display: block;
+}
     
 }
 

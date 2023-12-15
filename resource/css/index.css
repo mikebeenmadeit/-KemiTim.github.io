@@ -203,6 +203,8 @@ a:hover::after{
     padding-left: 18px; 
     font-family: 'Dancing Script', cursive;
     color: black;
+    font-weight: 900;
+    font-size: 1.5em
   }
   
   .text-container p {

@@ -129,9 +129,17 @@ a:hover::after{
 }
 
 .details-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  /* margin: 0; */
+
+
+
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 20px;
   }
   
@@ -145,6 +153,11 @@ a:hover::after{
   }
   
   .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
     width: 490px;
     padding: 20px;
     background-color: #d2b48c;
@@ -160,15 +173,15 @@ a:hover::after{
   }
   
   .text-container h2 {
-    padding-top: 33px;
-    padding-left: 18px;
+    /* padding-top: 33px; */
+    /* padding-left: 18px; */
     font-family: 'Dancing Script', cursive;
   }
   
   .text-container p {
-    padding-top: 27px;
+    /* padding-top: 27px; */
     font-size: 16px;
-    padding-left: 18px;
+    /* padding-left: 18px; */
     font-family: 'Fira Sans', sans-serif;
   }
   
@@ -213,19 +226,13 @@ a:hover::after{
     }
 
     .text-container {
-        width: 70%; /* Adjust the width as needed */
+       /* width: 80%;  Adjust the width as needed */
         margin-right: 0;
         margin-top: 0;
-        height: auto;
+        /* height: auto; */
+        height: 25em;
     }
 
-    .text-container h2 {
-        padding-top: 13px;
-    }
-
-    .text-container p {
-        padding-top: 18px;
-    }
 
     .text-container h5 {
         width: 300px;
@@ -286,7 +293,7 @@ a:hover::after{
     }
 
      .text-container {
-        height: 350px;
+        height: 360px;
         width: 400px;
     }
 

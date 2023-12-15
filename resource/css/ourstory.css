@@ -140,7 +140,7 @@ img{
   background-size: cover;
   background-position: center 20%;
   background-repeat: no-repeat;
-  height: 100vh; /* Set the height of the section */
+  /* height: 100vh; Set the height of the section */
 }
 
 
@@ -158,6 +158,7 @@ img{
 .para-container {
   max-width: 800px; /* Set the maximum width of the paragraphs */
   margin: 0 auto; /* Center the paragraphs horizontally */
+  padding-bottom: 16px;
 }
 
 .para {
@@ -211,15 +212,16 @@ img{
   padding-top: 50px;
   background-color: white;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 10px;/* has been changed  from padding bottom to padding only !*/
   font-family: 'Fira Sans', sans-serif;
+  padding-top: 25px;
   
   
 }
 
 .storycont {
   background-color: #d2b48c;
-  height: 170vh;
+  /* height: 170vh; */
 }
 
 @media screen and (max-width: 1100px) {
@@ -344,9 +346,13 @@ img{
     margin-top: -140px; /* Adjust the margin-top for smaller screens */
   }
 
-  .para-container {
-   
-    margin-bottom: 180px; /* Add margin at the bottom to separate paragraphs */
+  /* Add margin at the bottom to separate paragraphs */
+  /* .para-container {
+    margin-bottom: 180px; 
+  } */
+
+    .para-separetor {
+    margin-bottom: 180px; 
   }
 
 
@@ -359,7 +365,7 @@ img{
   
     .storycont {
       background-color: #d2b48c;
-      height: 159vh;
+      /* height: 159vh; */
     }
     
     }
@@ -368,7 +374,7 @@ img{
   
       .storycont {
         background-color: #d2b48c;
-        height: 137vh;
+        /* height: 137vh; */
       }
       
       }
@@ -377,14 +383,14 @@ img{
       @media screen and (min-width: 435px) and (max-width: 492px) {
         .storycont {
           background-color: #d2b48c;
-          height: 127vh;
+          /* height: 127vh; */
         }
       }
      
       @media screen and (min-width: 493px) and (max-width: 668px) {
         .storycont {
           background-color: #d2b48c;
-          height: 115vh;
+          /* height: 115vh; */
         }
 
        
@@ -395,7 +401,7 @@ img{
       @media screen and (min-width: 670px) and (max-width: 1100px) {
         .storycont {
           background-color: #d2b48c;
-          height: 108vh;
+          /* height: 108vh; */
         }
 
        

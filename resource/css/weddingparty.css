@@ -321,8 +321,4 @@ a:hover::after{
        font-size: 19px;
 }
 
- .dropdown-menu.open {
-    height: 460px;
-    display: block;
-  }
 }

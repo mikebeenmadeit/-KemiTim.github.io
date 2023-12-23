@@ -74,7 +74,7 @@ nav{
     right: 2rem;
     top: 60px;
     width: 200px;
-    background-color: #d2b48c;
+    background-color: #e3d5c2;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -130,10 +130,10 @@ body{
 
 .hotel-container {
     display: flex;
-    justify-content: center;  /* Space between the hotel containers */
-    margin-bottom: 20px;  /* Add some space between each hotel container */
     align-items: center;
-    padding-top: 23px;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
 }
 
 .hotels {

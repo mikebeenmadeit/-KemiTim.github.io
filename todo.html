@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/todo.css">
+    <title>Tim&Kemi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="top-bar">K e m i & T i m o t h y </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="accomodation.html">Accomodations</a></li>
+                <li><a href="dresscode.html">Dress Code</a></li>
+                <li><a href="ourstory.html">Our Story</a></li>
+                <li><a href="weddingparty.html">Wedding Party</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="registery.html">Registry</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="todo.html">ToDo</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown-menu">
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="accomodation.html">Accomodations</a></li>
+                <li><a href="dresscode.html">Dress Code</a></li>
+                <li><a href="ourstory.html">Our Story</a></li>
+                <li><a href="weddingparty.html">Wedding Party</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="registery.html">Registry</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="todo.html">ToDo</a></li>
+                
+            </div>
+      </nav>
+
+    <hr class="divider">
+
+    <div class="hotel-container">
+        <div class="hotels">
+            <img src="resource/images/lat.jpeg" alt="">
+            <h2 class="hotel-text">Hot & New - Latte Lounge</h2>
+            <p class="hotel-p">2190 N Waterford Dr Florissant, MO 63033</p>
+            
+            <a href="https://latteloungestl.com" target="_blank">
+            <button>Details</button>
+            </a>
+        </div>
+
+        <div class="hotels">
+            <img src="resource/images/www.png" alt="">
+            <h2 class="hotel-text" >The Armory STL</h2>
+            <p class="hotel-p"> 3660 Market St, St. Louis, MO 63110</p>
+            
+            <a href="https://www.armorystl.com" target="_blank">
+                <button class="hotel-bt">Details</button>
+            </a>
+        </div>
+
+        <div class="hotels">
+            <img src="resource/images/upd.jpeg" alt="">
+            <h2 class="hotel-text" >Up-Down STL</h2>
+            <p class="hotel-p">405 N Euclid Ave Saint Louis, MO 63108</p>
+            
+            <a href="https://www.updownarcadebar.com" target="_blank">
+                <button class="hotel-bt">Details</button>
+            </a>
+        </div>
+
+        <div class="hotels">
+            <img src="resource/images/ziii.jpeg" alt="">
+            <h2 class="hotel-text" >Go Ape Zipline & Adventure Park</h2>
+            <p class="hotel-p">13219 Streetcar Dr Maryland Heights, MO 63043</p>
+            
+            <a href="https://www.goape.com/location/missouri-st-louis/" target="_blank">
+                <button class="hotel-bt">Details</button>
+            </a>
+        </div>
+
+        <div class="hotels">
+            <img src="resource/images/ryze.jpeg" alt="">
+            <h2 class="hotel-text" >RYZE Adventure Park</h2>
+            <p class="hotel-p">12420 Grace Church Rd Maryland Heights, MO 63043</p>
+            
+            <a href="https://ryzeadventure.com" target="_blank">
+                <button class="hotel-bt">Details</button>
+            </a>
+        </div>
+
+        <div class="hotels">
+            <img src="resource/images/loo.jpeg" alt="">
+            <h2 class="hotel-text" >The Delmar Loop</h2>
+            <p class="hotel-p">6105- A Delmar Blvd Ste 210 St. Louis, MO 63112</p>
+            
+            <a href="https://visittheloop.com" target="_blank">
+                <button class="hotel-bt">Details</button>
+            </a>
+        </div>
+
+        <div class="hotels">
+            <img src="resource/images/chess.jpeg" alt="">
+            <h2 class="hotel-text" >Main Event - Chesterfield</h2>
+            <p class="hotel-p">17027 N Outer 40 Rd Chesterfield, MO 63005</p>
+            
+            <a href="https://www.mainevent.com/locations/missouri/chesterfield/" target="_blank">
+                <button class="hotel-bt">Details</button>
+            </a>
+        </div>
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2023 OluwaKemi & Timothy; Designed by <span class="designer">Michael Akande</span></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const toggleIcon = document.querySelector('.toggle i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+// Toggle the visibility of each dropdown item when the toggle icon is clicked
+        toggle.onclick = function () {
+         dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open');
+
+        toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+
+    // Toggle visibility of each dropdown item
+    dropdownItems.forEach(item => {
+        item.style.display = isOpen ? 'flex' : 'none';
+    });
+}; 
+// Close the dropdown menu and remove the 'open' class on any click outside the menu
+document.body.addEventListener('click', function (event) {
+            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
+                dropdownMenu.classList.remove('open');
+                toggleIcon.classList = 'fa-solid fa-bars';
+                dropdownItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+            }
+        });
+
+
+
+      </script>
+  
+        
+
+
+    
+</body>
+</html>

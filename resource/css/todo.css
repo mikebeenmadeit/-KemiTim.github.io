@@ -293,6 +293,10 @@ button {
     height: 470px;
     display: block;
   }
-  
+    .dropdown-menu li {
+       font-size: 19px;
+}
   
   }
+
+

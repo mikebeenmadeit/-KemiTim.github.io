@@ -152,9 +152,9 @@
 .move-up {
     margin-bottom: 500px;
     text-align: center;
-    text-align: center;
     width: 100%; /* Add this line */
     font-family: 'Fira Sans', sans-serif;
+    padding-right: 15px;
 
 }
 

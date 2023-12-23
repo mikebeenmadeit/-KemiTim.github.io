@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: montserrat;
+    
+  }
+  
+  nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-bar{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 30px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  nav ul li a{
+    font-size: 17px;
+    position: relative;
+    color: black;
+  }
+  
+  
+  .toggle {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    padding-right: 23px;
+    padding-top: 27px;
+  
+  }
+  
+  .dropdown-menu a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+  }
+  
+  .dropdown-menu a:hover{
+    font-family: 'Dancing Script', cursive;
+    color: #d2b48c;
+  }
+  
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: #d2b48c;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+  }
+  
+  .dropdown-menu.open {
+    height: 520px;
+    display: block;
+  }
+  
+  
+  .dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  
+
+.registry-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('/Users/mike/Desktop/Full Stack projects/KemiWedding/resource/images/022A8925.PNG');
+    background-size: 60% auto; /* Adjust the background-size to make the image smaller (30% width, auto height) */
+    background-position: right top; /* Adjust the background-position to move the image to the right */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.overlay h1 {
+    font-size: 49px;
+}
+
+.top-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 320px;
+    background-color:#d2b48c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; /* Updated this line */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Add padding to create space around content */
+    
+    
+}
+
+.move-up {
+    margin-bottom: 500px;
+    text-align: center;
+    text-align: center;
+    width: 100%; /* Add this line */
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.top-box p {
+    margin: 0;
+}
+
+.top-box p.date {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 55px; /* Adjust as needed */
+}
+
+.top-box p.box2 {
+    font-size: 20px;
+   
+}
+
+.custom-button {
+    background-color: grey; /* Change this to your desired button color */
+    color: white;
+    padding: 18px 26px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 93px;
+   
+    
+  }
+
+  @media screen and (max-width: 1510px) {
+
+    .top-bar {
+        font-size: 27px; /* You can adjust the font size as needed */
+        padding: 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis; /* Adjust padding as needed */
+      }
+
+    nav ul {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+
+}
+
+@media screen and (max-width: 1080px) {
+    .registry-section {
+      width: 100%; /* Make the overlay cover the entire width */
+    }
+  
+    .overlay {
+      width: 100%; /* Make the overlay cover the entire width */
+      text-align: center;
+    }
+  
+    .move-up {
+        margin-top: 0; /* Remove the negative margin-top for h1 */
+        display: block; /* Ensure display is block for centering */
+        margin-left: auto; /* Center the heading horizontally */
+        margin-right: auto; /* Center the heading horizontally */
+      }
+
+    .center-button {
+        margin-top: 20px; /* Adjust the margin-top as needed for the button */
+        text-align: center; /* Center the button */
+      }
+      .center-button {
+        margin-top: 20px; /* Adjust the margin-top as needed for the button */
+        text-align: center; /* Center the button */
+        display: block; /* Ensures margin-top works */
+        margin-left: auto; /* Center the button horizontally */
+        margin-right: auto; /* Center the button horizontally */
+      }
+
+      p {
+        text-align: center;
+        margin-top: 10px; /* Adjust the margin-top as needed for the paragraphs */
+        max-width: 100%; /* Ensure paragraphs don't exceed the width of the overlay */
+        margin-left: auto; /* Center the paragraphs horizontally */
+        margin-right: auto; /* Center the paragraphs horizontally */
+        max-width: 80%;
+      }
+  }
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  
+    .dropdown-menu.open {
+      height: 470px;
+      display: block;
+    }
+
+    .top-box {
+        width: 303px;
+
+    }
+    
+    
+    }
+

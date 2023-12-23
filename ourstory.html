@@ -7,6 +7,8 @@
     <title>OUR STORY</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="resource/css/ourstory.css">
+    <link rel="stylesheet" href="resource/css/background.css">
+    <link rel="stylesheet" href="resource/css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -50,6 +52,8 @@
 </section>
 
 <section class="storycont">
+    <div class="dropbackground">
+        <div class="backdrop-overlay">
     <div class="story">
         <h2 class="story-h2">Her POV</h2>
         <div class="para-container para-separetor">
@@ -68,6 +72,8 @@
             <p class="para">At times, it seemed challenging to reach her, but my love for her persisted. What started as a casual acquaintance transformed into a deep love, rooted in shared moments and laughter. Eventually, I asked her to be my partner, and after some time, particularly during one of our group trips, she said yes! A few months later, with the assistance of her closest friends, I orchestrated a surprise proposal. I am grateful for God's faithfulness and feel blessed to do life with my beautiful baby girl 💗</p>
         </div>
     </div>
+        </div>
+    </div>
 </section>
 
 
@@ -76,44 +82,6 @@
             <p>Copyright &copy; 2023 OluwaKemi & Timothy; Created by <span class="designer">Michael Akande</span></p>
         </div>
     </footer>
-
-
-<script>
-    const toggle = document.querySelector('.toggle');
-    const toggleIcon = document.querySelector('.toggle i');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-    const dropdownItems = document.querySelectorAll('.dropdown-menu li');
-
-// Toggle the visibility of each dropdown item when the toggle icon is clicked
-    toggle.onclick = function () {
-     dropdownMenu.classList.toggle('open');
-    const isOpen = dropdownMenu.classList.contains('open');
-
-    toggleIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars';
-
-// Toggle visibility of each dropdown item
-dropdownItems.forEach(item => {
-    item.style.display = isOpen ? 'flex' : 'none';
-});
-}; 
-// Close the dropdown menu and remove the 'open' class on any click outside the menu
-document.body.addEventListener('click', function (event) {
-        if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
-            dropdownMenu.classList.remove('open');
-            toggleIcon.classList = 'fa-solid fa-bars';
-            dropdownItems.forEach(item => {
-                item.style.display = 'none';
-            });
-        }
-    });
-
-
-
-  </script>
-
-
-    
+    <script src="./navbar.js"></script>
 </body>
 </html>

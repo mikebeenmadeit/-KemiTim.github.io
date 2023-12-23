@@ -7,11 +7,14 @@
     <title>Tim&Kemi Wedding</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="resource/css/index.css">
+    <link rel="stylesheet" href="resource/css/navbar.css">
+    <link rel="stylesheet" href="resource/css/background.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
 </head>
-<body>  
+<body> 
    <nav>
         <div class="top-bar">K e m i & T i m o t h y </div>
             <ul>
@@ -45,8 +48,9 @@
       </nav>
 
 
-    <hr class="divider">
-
+    <div class="dropbackground">
+        <div class="backdrop-overlay">
+            <hr class="divider">
     <div class="colored-section">
         <!-- Images Section -->
         <div class="images">
@@ -68,48 +72,14 @@
             <a href="https://www.weddingwire.us/website/kemi-and-tim" class="custom-button" target="_blank">RSVP</a>
         </div>
   </div>
-    
-   <footer>
-        <div class="footer-content">
-            <p>Copyright &copy; 2023 OluwaKemi & Timothy; Created by <span class="designer">Michael Akande</span></p>
-        </div>
-    </footer>
-
-      <script>
-        const toggle = document.querySelector('.toggle');
-        const toggleIcon = document.querySelector('.toggle i');
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
-
-// Toggle the visibility of each dropdown item when the toggle icon is clicked
-        toggle.onclick = function () {
-         dropdownMenu.classList.toggle('open');
-        const isOpen = dropdownMenu.classList.contains('open');
-
-        toggleIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars';
-
-    // Toggle visibility of each dropdown item
-    dropdownItems.forEach(item => {
-        item.style.display = isOpen ? 'flex' : 'none';
-    });
-}; 
-// Close the dropdown menu and remove the 'open' class on any click outside the menu
-document.body.addEventListener('click', function (event) {
-            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
-                dropdownMenu.classList.remove('open');
-                toggleIcon.classList = 'fa-solid fa-bars';
-                dropdownItems.forEach(item => {
-                    item.style.display = 'none';
-                });
-            }
-        });
-
-
-
-      </script>
-
-
+  <hr class="divider">
+</div>
+</div>
+<footer>
+    <div class="footer-content">
+        <p>Copyright &copy; 2023 OluwaKemi & Timothy; Created by <span class="designer">Michael Akande</span></p>
+    </div>
+</footer>
+<script src="./navbar.js"></script>
 </body>
 </html>

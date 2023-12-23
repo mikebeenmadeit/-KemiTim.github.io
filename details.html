@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="resource/css/details.css">
+    <link rel="stylesheet" href="resource/css/background.css">
+    <link rel="stylesheet" href="resource/css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -43,17 +45,22 @@
                 
             </div>
       </nav>
-
+      <div class="dropbackground">
+        <div class="backdrop-overlay">
     <hr class="divider">
-
+  
     <div class="details-container">
-        <img src="resource/images/022A8857.PNG" alt="image" class="details-image">
+        <div>
+            <img src="resource/images/022A8857.PNG" alt="image" class="details-image">
+        </div>
+        <!-- <div class="location-grid"> -->
         <div class="text-container">
           <!-- <h2>Wedding Details</h2> -->
+          <div class="inner-text">
           <p style="line-height: 1.6em;">
-           <span style="font-weight:900; font-size: 2.1em; font-family: 'Dancing Script', cursive;"  >Wedding Details</span> 
+           <span style="font-weight:900; font-size: 2.1em; font-family: 'Dancing Script', cursive;"  >Our Ceremony</span> 
            <br>
-           <br>
+             <br>
             <span>Date</span>
             <br>
             <span style="font-weight: bold;">Saturday, April 20th, 2024</span>
@@ -61,57 +68,86 @@
             <span>Location</span>
             <br>
             <span style="font-weight: bold;">The Center,
-                210 Fee Fee Dr Hazelwood, Missouri 63042</span>
+                210 Fee Fee Dr, Hazelwood, Missouri 63042</span>
                 <br>
                 <span>Time</span> 
                 <br>
-                <span style="font-weight: bold;">Celebration Starts at 2PM</span>
+                <span style="font-weight: bold;">2:00 PM</span>
           </p>
         </div>
+          <div class="button-container">
+            <button onclick="goToLocation()">Map</button>
+            <button onclick="ourCeremonyCalendar('Kemi & Tim - Our Ceremony', '2024-04-20T14:00:00', '2024-04-20T15:00:00')">Add to Calender</button>
+          </div>
+        
+        </div>
+        <div class="text-container">
+            <!-- <h2>Wedding Details</h2> -->
+            <div class="inner-text">
+            <!-- <h2>Wedding Details</h2> -->
+            <p style="line-height: 1.6em;">
+             <span style="font-weight:900; font-size: 2.1em; font-family: 'Dancing Script', cursive;"  >Cocktail Hour</span> 
+             <br>
+             <br>
+              <span>Date</span>
+              <br>
+              <span style="font-weight: bold;">Saturday, April 20th, 2024</span>
+              <br>
+              <span>Location</span>
+              <br>
+              <span style="font-weight: bold;">The Center,
+                  210 Fee Fee Dr Hazelwood, Missouri 63042</span>
+                  <br>
+                  <span>Time</span> 
+                  <br>
+                  <span style="font-weight: bold;">3:00 PM</span>
+            </p>
+        </div>
+        <div class="button-container">
+          <button onclick="goToLocation()">Map</button>
+          <button onclick="ourCeremonyCalendar('Kemi & Tim - Cocktail Hour', '2024-04-20T15:00:00', '2024-04-20T16:00:00')">Add to Calender</button>
+        </div>
+          </div>
+          <div class="text-container">
+            <!-- <h2>Wedding Details</h2> -->
+            <div class="inner-text">
+            <!-- <h2>Wedding Details</h2> -->
+            <p style="line-height: 1.6em;">
+             <span style="font-weight:900; font-size: 2.1em; font-family: 'Dancing Script', cursive;"  >Our Reception</span> 
+             <br>
+             <br>
+              <span>Date</span>
+              <br>
+              <span style="font-weight: bold;">Saturday, April 20th, 2024</span>
+              <br>
+              <span>Location</span>
+              <br>
+              <span style="font-weight: bold;">The Center,
+                  210 Fee Fee Dr Hazelwood, Missouri 63042</span>
+                  <br>
+                  <span>Time</span> 
+                  <br>
+                  <span style="font-weight: bold;">4:00 PM</span>
+            </p>
+          <!-- </div> -->
+        </div>
+        <div class="button-container">
+          <button onclick="goToLocation()">Map</button>
+          <button onclick="ourCeremonyCalendar('Kemi & Tim - Our Reception', '2024-04-20T16:00:00', '2024-04-20T17:00:00')">Add to Calender</button>
+        </div>
+        </div>
 
-      </div>
-
-
+    </div>
+      <hr class="divider">
+    </div>
+</div>
        <footer>
         <div class="footer-content">
             <p>Copyright &copy; 2023 OluwaKemi & Timothy; Created by <span class="designer">Michael Akande</span></p>
         </div>
     </footer>
 
-    <script>
-        const toggle = document.querySelector('.toggle');
-        const toggleIcon = document.querySelector('.toggle i');
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-        const dropdownItems = document.querySelectorAll('.dropdown-menu li');
-
-// Toggle the visibility of each dropdown item when the toggle icon is clicked
-        toggle.onclick = function () {
-         dropdownMenu.classList.toggle('open');
-        const isOpen = dropdownMenu.classList.contains('open');
-
-        toggleIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars';
-
-    // Toggle visibility of each dropdown item
-    dropdownItems.forEach(item => {
-        item.style.display = isOpen ? 'flex' : 'none';
-    });
-}; 
-// Close the dropdown menu and remove the 'open' class on any click outside the menu
-document.body.addEventListener('click', function (event) {
-            if (!dropdownMenu.contains(event.target) && !toggle.contains(event.target)) {
-                dropdownMenu.classList.remove('open');
-                toggleIcon.classList = 'fa-solid fa-bars';
-                dropdownItems.forEach(item => {
-                    item.style.display = 'none';
-                });
-            }
-        });
-
-
-
-      </script>
+    <script src="./navbar.js"></script>
 
       
     

@@ -75,7 +75,7 @@ nav{
     right: 2rem;
     top: 60px;
     width: 200px;
-    background-color: #d2b48c;
+    background-color: #e3d5c2;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -99,7 +99,6 @@ nav{
 
 .divider {
     color:#d2b48c;
-    border: none;
     border-top: 2px solid #d2b48c; /* Adjust the color and thickness as needed */
     margin: 20px 0; /* Add margin to control the distance between the line and content */
 }

@@ -271,7 +271,12 @@
         height: 340px;
 
     }
+
+      .dropdown-menu li {
+       font-size: 19px;
+}
     
     
     }
+
 

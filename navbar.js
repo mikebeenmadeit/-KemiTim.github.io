@@ -57,9 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
   function goToLocation() {
-
     var address = "210 Fee Fee Hills Dr, Hazelwood, Missouri 63042";
-
     // Check if the user is on an iOS device
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
       // Open Apple Maps
@@ -68,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function() {
       // Open Google Maps
       window.open('https://www.google.com/maps?q=' + encodeURIComponent(address));
     }
-
   }
 
 

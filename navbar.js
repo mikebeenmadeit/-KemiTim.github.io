@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function goToLocation() {
     var address = "210 Fee Fee Hills Dr, Hazelwood, Missouri 63042";
     // Check if the user is on an iOS device
-    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent) || navigator.userAgent.includes("Mac")) {
       // Open Apple Maps
       window.open('maps://?q=' + encodeURIComponent(address));
     } else {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     eventStartDate = convertDateString(eventStartDate)
     eventEndDate = convertDateString(eventEndDate)
     
-    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent) || navigator.userAgent.includes("Mac")) {
       addToIosCalendar(eventName, eventLocation, eventStartDate, eventEndDate);
     } else {
       // For Android or other platforms, you can open a Google Calendar link
@@ -125,8 +125,8 @@ function convertDateString(inputString) {
       'BEGIN:VEVENT\n' +
       'SUMMARY:' + eventName + '\n' +
       'LOCATION:' + eventLocation + '\n' +
-      'DTSTART:' + eventStartDate.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '') + '\n' +
-      'DTEND:' + eventEndDate.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '') + '\n' +
+      'DTSTART:' + eventStartDate + '\n' +
+      'DTEND:' + eventEndDate + '\n' +
       'DESCRIPTION:' + 'Event added from my website\n' +
       'UID:' + new Date().toISOString() + '@yourwebsite.com\n' +
       'SEQUENCE:0\n' +

@@ -20,4 +20,4 @@
 
 
   // Automatic slideshow
-  setInterval(nextSlide, 3000);
+  setInterval(nextSlide, 10000);

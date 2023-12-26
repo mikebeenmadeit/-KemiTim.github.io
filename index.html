@@ -55,13 +55,19 @@
     <div class="dropbackground">
         <div class="backdrop-overlay">
             <hr class="divider">
-    <div class="colored-section">
+    <div class="colored-section" id="image-container">
         <!-- Images Section -->
-        <div class="images">
-            <img src="resource/images/022A9010.PNG" alt="Image 1">
-            <img src="resource/images/022A8930.PNG" alt="Image 2">
-            <img src="resource/images/022A8997.PNG" alt="Image 3">
+        <div class="images" id="image-carousel">
+            <img class="carousel-image" src="resource/images/022A9010.PNG" alt="Image 1">
+            <img class="carousel-image" src="resource/images/022A8930.PNG" alt="Image 2">
+            <img class="carousel-image" src="resource/images/022A8997.PNG" alt="Image 3">
+            <img class="carousel-image" src="resource/images/022A8836.PNG" alt="Image 3">
+            <img class="carousel-image" src="resource/images/022A8843.PNG" alt="Image 3">
+            <img class="carousel-image" src="resource/images/022A8857.PNG" alt="Image 3">
+            <img class="carousel-image" src="resource/images/022A8925.PNG" alt="Image 3">
         </div>
+        <button class="carousel-btn" id="prev-btn" onclick="prevSlide()">❮</button>
+        <button class="carousel-btn" id="next-btn" onclick="nextSlide()">❯</button>
     </div>
 
 
@@ -85,5 +91,6 @@
     </div>
 </footer>
 <script src="./navbar.js"></script>
+<script src="./carousel.js"></script>
 </body>
 </html>

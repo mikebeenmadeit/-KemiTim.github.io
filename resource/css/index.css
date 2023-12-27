@@ -191,6 +191,10 @@ a:hover::after {
   box-shadow: 0 0 15px #db6363;
 }
 
+#bible {
+  font-family: 'Dancing Script', cursive;
+
+}
 
 .flex-container {
   display: flex;

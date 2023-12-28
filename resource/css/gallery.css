@@ -19,7 +19,7 @@ nav{
 
 .top-bar{
     color: black;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 80px;
     padding: 0 50px;
     font-weight: bold;
@@ -202,7 +202,7 @@ a:hover::after{
 @media screen and (max-width: 850px) {
     /* Adjust image size for smaller screens */
     .top-bar {
-        font-size: 22px; /* You can adjust the font size as needed */
+        font-size: 25px; /* You can adjust the font size as needed */
         padding: 0 20px;
         white-space: nowrap;
         text-overflow: ellipsis; /* Adjust padding as needed */
@@ -224,7 +224,7 @@ a:hover::after{
   @media screen and (min-width: 1403px) and (max-width: 1510px) {
 
     .top-bar {
-        font-size: 27px; /* You can adjust the font size as needed */
+        font-size: 25px; /* You can adjust the font size as needed */
         padding: 0 20px;
         white-space: nowrap;
         text-overflow: ellipsis; /* Adjust padding as needed */
@@ -260,7 +260,7 @@ a:hover::after{
 
 @media screen and (max-width: 1400px) {
   .top-bar {
-    font-size: 27px;
+    font-size: 25px;
     /* You can adjust the font size as needed */
     padding: 0 20px;
     white-space: nowrap;

@@ -350,7 +350,7 @@ a:hover::after {
 
 
 
-@media screen and (max-width: 1510px) {
+@media screen and (min-width: 1360px) and (max-width: 1510px) {
 
   .top-bar {
     font-size: 27px;
@@ -362,11 +362,11 @@ a:hover::after {
   }
 
   nav ul {
-    display: none;
+    display: flex;
   }
 
   .toggle {
-    display: block;
+    display: none;
   }
 
   .dropdown-menu {

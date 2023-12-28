@@ -350,7 +350,7 @@ a:hover::after {
 
 
 
-@media screen and (min-width: 1400px) and (max-width: 1510px) {
+@media screen and (min-width: 1425px) and (max-width: 1510px) {
 
   .top-bar {
     font-size: 27px;
@@ -454,7 +454,7 @@ a:hover::after {
 
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1420px) {
   .top-bar {
     font-size: 27px;
     /* You can adjust the font size as needed */

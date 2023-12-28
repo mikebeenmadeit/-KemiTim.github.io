@@ -13,6 +13,14 @@
     background-position: right top; /* Adjust the background-position to move the image to the right */
     
   }
+
+a[aria-current="page"] {
+    background-color: #d2b48c;
+    padding: 5px;
+    border-radius: 5px;
+    /* text-decoration: underline solid #d2b48c 0.2rem;
+    text-underline-offset: 0.8rem; */
+  }
   
   nav{
     background: white;

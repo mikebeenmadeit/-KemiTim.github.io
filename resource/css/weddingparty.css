@@ -285,7 +285,7 @@ a:hover::after{
   }
 
 
-  @media screen and (max-width: 1510px) {
+  @media screen and (min-width: 1403px) and (max-width: 1510px) {
 
     .top-bar {
         font-size: 27px; /* You can adjust the font size as needed */
@@ -295,11 +295,11 @@ a:hover::after{
       }
 
     nav ul {
-        display: none;
+        display: flex;
     }
 
     .toggle {
-        display: block;
+        display: none;
     }
 
     .dropdown-menu {
@@ -317,9 +317,32 @@ a:hover::after{
    
 }
 
+@media screen and (max-width: 1400px) {
+  .top-bar {
+    font-size: 27px;
+    /* You can adjust the font size as needed */
+    padding: 0 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* Adjust padding as needed */
+  }
+
+    nav ul {
+    display: none;
+  }
+
+
+  .toggle {
+    display: block; /* This line is causing the toggle to be visible */
+  }
+
+}
+
 @media screen and (max-width: 480px) {
   .dropdown-menu li {
        font-size: 19px;
 }
 
 }
+
+

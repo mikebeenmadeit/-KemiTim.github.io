@@ -464,6 +464,10 @@ a:hover::after {
     /* Adjust padding as needed */
   }
 
+    nav ul {
+    display: none;
+  }
+
 
   .toggle {
     display: block; /* This line is causing the toggle to be visible */

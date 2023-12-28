@@ -135,8 +135,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
-    height: 370px;
+    width: 330px;
+    height: 280px;
     background-color:#d2b48c;
     box-shadow: 0 0 15px #db6363;
     border-radius: 10%;
@@ -166,7 +166,7 @@
 .top-box p.date {
     font-size: 20px;
     margin-top: 4px;
-    margin-bottom: 55px; /* Adjust as needed */
+    margin-bottom: 35px; /* Adjust as needed */
 }
 
 .top-box p.box2 {
@@ -181,7 +181,7 @@
     border: none;
     border-radius: 14px;
     cursor: pointer;
-    margin-top: 93px;
+    margin-top: 37px;
    
     
   }
@@ -269,7 +269,7 @@
 
     .top-box {
         width: 303px;
-        height: 370px;
+        height: 300px;
 
     }
 

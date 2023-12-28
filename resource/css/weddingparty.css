@@ -175,6 +175,7 @@ a:hover::after{
   }
 
   .spacer {
+    display: none;
     width: 100%;
     margin-bottom: 30px; /* Adjust the spacing between rows of bridesmaids */
   }

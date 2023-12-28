@@ -324,14 +324,7 @@ a:hover::after {
 @media screen and (min-width: 851px) and (max-width: 1450px) {
   /* Adjust image size and position for screens between 850px and 1000px */
 
-  .top-bar {
-    font-size: 27px;
-    /* You can adjust the font size as needed */
-    padding: 0 20px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    /* Adjust padding as needed */
-  }
+ 
 
   .flex-container img {
     max-width: 70%;
@@ -353,7 +346,7 @@ a:hover::after {
 @media screen and (min-width: 1403px) and (max-width: 1510px) {
 
   .top-bar {
-    font-size: 27px;
+    font-size: 25px;
     /* You can adjust the font size as needed */
     padding: 0 20px;
     white-space: nowrap;
@@ -456,7 +449,7 @@ a:hover::after {
 
 @media screen and (max-width: 1400px) {
   .top-bar {
-    font-size: 27px;
+    font-size: 25px;
     /* You can adjust the font size as needed */
     padding: 0 20px;
     white-space: nowrap;

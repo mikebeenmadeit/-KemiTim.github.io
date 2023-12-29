@@ -298,4 +298,27 @@ button {
   
   }
 
+@media screen and (min-width: 1472px) and (max-width: 1510px) {
+
+  .top-bar {
+    font-size: 20px;
+    /* You can adjust the font size as needed */
+    padding: 0 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* Adjust padding as needed */
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+}
 

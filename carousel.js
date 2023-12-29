@@ -19,6 +19,7 @@
         updateCarousel();
     }
 
+/*
    function startCarousel() {
         intervalId = setInterval(nextSlide, 2000); // Change 2000 to the desired interval in milliseconds (e.g., 2000 for 2 seconds)
     }
@@ -30,5 +31,5 @@
     // Start the carousel when the page is loaded
     document.addEventListener('DOMContentLoaded', startCarousel);
 
-
+*/
   // Automatic slideshow

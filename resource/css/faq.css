@@ -187,7 +187,7 @@ h1{
 }
 
 
-@media screen and (min-width: 1403px) and (max-width: 1510px) {
+@media screen and (min-width: 1470px) and (max-width: 1510px) {
 
     .top-bar {
         font-size: 20px; /* You can adjust the font size as needed */
@@ -220,7 +220,7 @@ h1{
   }
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1470px) {
   .top-bar {
     font-size: 20px;
     /* You can adjust the font size as needed */

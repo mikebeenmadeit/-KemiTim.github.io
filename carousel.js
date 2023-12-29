@@ -6,7 +6,7 @@
     let intervalId;
 
     function updateCarousel() {
-        carousel.style.transform = `translateX(${-currentIndex * 300}px)`;
+        carousel.style.transform = `translateX(${-currentIndex * 100}px)`;
     }
 
     function nextSlide() {

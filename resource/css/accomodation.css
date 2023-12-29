@@ -177,12 +177,12 @@ button {
 }
 
 .footer-content{
-    padding: 37px
+    padding-top: 37px;
     background-color: white;
     text-align: center;
-    padding-top: 121px;
-    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 10px;
     color: #000;
+    font-family: 'Fira Sans', sans-serif;
     
 }
 

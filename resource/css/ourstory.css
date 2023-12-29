@@ -212,7 +212,7 @@ img{
   padding-top: 37px;
   background-color: white;
   text-align: center;
-  padding: 10px;/* has been changed  from padding bottom to padding only !*/
+  padding-bottom: 10px;/* has been changed  from padding bottom to padding only !*/
   font-family: 'Fira Sans', sans-serif;
   padding-top: 25px;
   

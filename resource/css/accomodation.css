@@ -190,7 +190,7 @@ button {
     /* Styles for screens less than 1000px wide */
 
     .top-bar {
-        font-size: 22px; /* You can adjust the font size as needed */
+        font-size: 20px; /* You can adjust the font size as needed */
         padding: 0 20px;
         white-space: nowrap;
         text-overflow: ellipsis; /* Adjust padding as needed */
@@ -225,7 +225,7 @@ button {
     /* Styles for screens less than 900px wide but greater than or equal to 780px */
     
     .top-bar {
-        font-size: 22px; /* You can adjust the font size as needed */
+        font-size: 20px; /* You can adjust the font size as needed */
         padding: 0 20px;
         white-space: nowrap;
         text-overflow: ellipsis; /* Adjust padding as needed */
@@ -255,7 +255,7 @@ button {
   @media screen and (max-width: 1510px) {
 
     .top-bar {
-        font-size: 27px; /* You can adjust the font size as needed */
+        font-size: 20px; /* You can adjust the font size as needed */
         padding: 0 20px;
         white-space: nowrap;
         text-overflow: ellipsis; /* Adjust padding as needed */

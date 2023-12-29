@@ -265,7 +265,7 @@
 @media screen and (max-width: 480px) {
   
     .dropdown-menu.open {
-      height: 470px;
+      height: 520px;
       display: block;
     }
 

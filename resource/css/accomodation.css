@@ -166,6 +166,15 @@ body{
     color: black;
 }
 
+.rate {
+  padding-bottom: 10px;
+}
+
+.rate-last {
+  padding-bottom: 18px;
+
+}
+
 button {
     background-color: grey;
     color: #fff;

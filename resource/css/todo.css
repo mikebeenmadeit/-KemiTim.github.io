@@ -257,7 +257,7 @@ button {
   @media screen and (max-width: 1510px) {
 
     .top-bar {
-        font-size: 25px; /* You can adjust the font size as needed */
+        font-size: 20px; /* You can adjust the font size as needed */
         padding: 0 20px;
         white-space: nowrap;
         text-overflow: ellipsis; /* Adjust padding as needed */

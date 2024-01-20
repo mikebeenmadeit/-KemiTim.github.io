@@ -173,6 +173,7 @@ nav{
 
 .reg-link {
   display: flex;
+  padding-top: 13px;
 }
 
 .reg-link a {

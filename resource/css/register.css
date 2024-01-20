@@ -171,6 +171,13 @@ nav{
     border-radius: 10px;
 }
 
+.reg-link {
+  display: flex;
+}
+
+.reg-link a {
+  margin-right: 20px;
+}
 
  
   

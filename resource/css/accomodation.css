@@ -299,18 +299,18 @@ button {
 }
 }
 
-@media screen and (max-width: 722px) {
+@media screen and (max-width: 731px) {
   .hotel-container {
-    margin-top: 220px; /* Adjust the margin-top to create space between navbar and hotel container */
-    margin-bottom: 220px;
+    margin-top: 230px; /* Adjust the margin-top to create space between navbar and hotel container */
+    margin-bottom: 230px;
 }
   }
   
 
   @media screen and (min-width: 731px) and (max-width: 1180px) {
     .hotel-container {
-        margin-top: 300px; /* Adjust the margin-top to create space between navbar and hotel container */
-        margin-bottom: 300px;
+        margin-top: 310px; /* Adjust the margin-top to create space between navbar and hotel container */
+        margin-bottom: 310px;
     }
 }
 

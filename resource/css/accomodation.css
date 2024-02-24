@@ -298,3 +298,19 @@ button {
        font-size: 19px;
 }
 }
+
+@media screen and (max-width: 722px) {
+  .hotel-container {
+    margin-top: 170px; /* Adjust the margin-top to create space between navbar and hotel container */
+    margin-bottom: 170px;
+}
+  }
+  
+
+  @media screen and (min-width: 731px) and (max-width: 1180px) {
+    .hotel-container {
+        margin-top: 270px; /* Adjust the margin-top to create space between navbar and hotel container */
+        margin-bottom: 270px;
+    }
+}
+

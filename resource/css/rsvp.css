@@ -330,3 +330,13 @@
 
 }
 
+
+@media screen and (max-width: 1080px) {
+
+    .top-box {
+        width: 303px;
+        height: 410px;
+
+    }
+     
+    }
